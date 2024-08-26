@@ -2,30 +2,23 @@
 layout: post
 title: test
 ---
-this is a test
 
-===
-Contents
-===
-haha
----
-
-    Hello there
-
+### Contents
 
 ```cpp
-for (int i = 0; i < 10; ++i)
+    for (int i = 0; i < 10; ++i)
 ```
 
 ```rs
 fn main()
 ```
 
-- List item
+| Matrix | has |
+| ------ | --- |
+| you    | Neo |
 
-1. another list item
-
-|-----|-----|
-| it  | has |
-|-----|-----|
-
+```
+| Matrix | has |
+| ------ | --- |
+| you    | Neo |
+```
