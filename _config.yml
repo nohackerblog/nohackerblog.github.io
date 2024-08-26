@@ -1,0 +1,5 @@
+layouts_dir         : _layouts
+markdown            : kramdown
+kramdown:
+  input             : GFM
+  hard_wrap         : false
