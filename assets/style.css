@@ -82,6 +82,15 @@ main h2 {
     margin-bottom: 20px;
 }
 
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .posts-list {
     list-style-type: none;
     padding: 0;
