@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="cybi">
 
 	<title>{{ page.title }}</title>
 
@@ -25,8 +26,11 @@
 				</ul>
 			</nav>
 			<main>
-				<h2>{{ page.title }}</h2>
-				{{ content }}
+				<article>
+					<h2>{{ page.title }}</h2>
+					<p>Published on {{ page.date }} by {{ page.author }}</p>
+					{{ content }}
+				</article>
 			</main>
 		</div>
 		<footer>
