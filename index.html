@@ -4,13 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>NoHacker</title>
-
 	<link rel="stylesheet" href="assets/style.css">
 	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-
-	<script src="https://unpkg.com/htmx.org@2.0.2"></script>
 </head>
 
 <body>
@@ -22,21 +18,20 @@
 			</header>
 			<nav>
 				<ul>
-					<li><a href="index.html" hx-get="home.html" hx-target="#content" hx-swap="innerHTML">Home</a></li>
-					<li><a href="contact.html" hx-get="contact.html" hx-target="#content" hx-swap="innerHTML">Contact</a></li>
-					<li><a href="about.html" hx-get="about.html" hx-target="#content" hx-swap="innerHTML">About</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About</a></li>
 				</ul>
 			</nav>
 			<main>
-				<div id="content">
-					<h2>Recent Posts</h2>
-					<ul class="posts-list">
-						<li>
-							<a href="posts/post1.txt">nothing bro</a> -
-							<span>August 26, 2024</span>
-						</li>
-					</ul>
-				</div </main>
+				<h2>Recent Posts</h2>
+				<ul class="posts-list">
+					<li>
+						<a href="posts/post1.txt">nothing bro</a> -
+						<span>August 26, 2024</span>
+					</li>
+				</ul>
+			</main>
 		</div>
 		<footer>
 			<p>&copy; 2024 Stefan Goidescu. All rights reserved.</p>
