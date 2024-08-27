@@ -222,5 +222,10 @@ pre {
     border-radius: 5px;
     overflow-x: auto;
     max-width: 70%;
-    /*    margin: 20px auto;*/
+}
+
+@media only screen and (max-width: 600px) {
+    pre {
+        max-width: 100%;
+    }
 }
