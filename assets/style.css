@@ -129,29 +129,33 @@ footer p {
 
 /* Style for code */
 code {
-    background-color: #000000;
     padding: 2px 4px;
     font-family: "Courier New", Courier, monospace;
 }
 
 pre {
-    background-color: #000000;
     border: 1px solid #00FF00;
     padding: 10px;
-    overflow-x: auto;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
     width: auto;
 }
 
-pre code {
-    font-family: "Courier New", Courier, monospace;
+code,
+pre {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: #000000;
+    overflow-x: auto;
 }
 
 /* Table styling */
 table {
     width: 50%;
+    max-width: 100%;
     border-collapse: collapse;
     margin-bottom: 1em;
+    margin: 0 auto;
 }
 
 table,
@@ -174,4 +178,17 @@ td {
 
 tr:hover {
     background-color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+
+    code,
+    pre {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    table {
+        width: 100%;
+    }
 }
