@@ -129,8 +129,7 @@ footer p {
 
 /* Style for code */
 code {
-    color: #00FF00;
-    background-color: #1a1a1a;
+    background-color: #000000;
     padding: 2px 4px;
     border-radius: 4px;
     font-family: "Courier New", Courier, monospace;
@@ -142,11 +141,38 @@ pre {
     border-radius: 4px;
     padding: 10px;
     overflow-x: auto;
-    color: #00FF00;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
 }
 
 pre code {
-    color: #00FF00;
     font-family: "Courier New", Courier, monospace;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+table,
+th,
+td {
+    border: 1px solid #00FF00;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: #00FF00;
+    padding: 8px;
+}
+
+td {
+    background-color: #000000;
+    color: #00FF00;
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: #1a1a1a;
 }
