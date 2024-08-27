@@ -131,17 +131,16 @@ footer p {
 code {
     background-color: #000000;
     padding: 2px 4px;
-    border-radius: 4px;
     font-family: "Courier New", Courier, monospace;
 }
 
 pre {
     background-color: #000000;
     border: 1px solid #00FF00;
-    border-radius: 4px;
     padding: 10px;
     overflow-x: auto;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    width: auto;
 }
 
 pre code {
@@ -150,7 +149,7 @@ pre code {
 
 /* Table styling */
 table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
     margin-bottom: 1em;
 }
