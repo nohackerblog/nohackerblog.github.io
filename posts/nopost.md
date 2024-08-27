@@ -1,6 +1,8 @@
 ---
 layout: post
 title: test
+author: cybi
+date: 26-Aug 2024
 ---
 
 ### Contents
