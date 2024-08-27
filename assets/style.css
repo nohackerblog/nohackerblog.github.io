@@ -126,3 +126,27 @@ footer p {
     color: #888888;
     margin: 0;
 }
+
+/* Style for code */
+code {
+    color: #00FF00;
+    background-color: #1a1a1a;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+    background-color: #000000;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+    color: #00FF00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+pre code {
+    color: #00FF00;
+    font-family: "Courier New", Courier, monospace;
+}
