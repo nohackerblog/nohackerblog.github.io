@@ -5,9 +5,12 @@ title: test
 
 ### Contents
 
-```cpp
-for (int i = 0; i < 10; ++i) {
-    printf("Hello World!");
+```c
+int main(int argc, char *argv[])
+{
+    for (int i = 0; i < 10; ++i) {
+        printf("Hello World!");
+    }
 }
 ```
 

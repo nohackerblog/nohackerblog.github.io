@@ -156,7 +156,6 @@ pre,
 code {
     background-color: #002200;
     color: #00FF00;
-    padding: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -164,54 +163,45 @@ code {
 code .k {
     /* Keyword */
     color: #00FFFF;
-    /* Cyan for keywords */
 }
 
 code .kt {
     /* Keyword Type */
     color: #00FFFF;
-    /* Cyan for keyword types */
 }
 
 code .n {
     /* Name or Variable */
     color: #00FFAA;
-    /* Bright greenish-cyan for variables */
 }
 
 code .mi {
     /* Literal Number */
     color: #FF00FF;
-    /* Magenta for numbers */
 }
 
 code .s {
     /* String */
     color: #FFAA00;
-    /* Yellow-orange for strings */
 }
 
 code .p {
     /* Punctuation */
     color: #00FF00;
-    /* Keep punctuation terminal green */
 }
 
 code .c {
     /* Comment */
     color: #00AA00;
-    /* Slightly dimmer green for comments */
 }
 
 code .o {
     /* Operators */
-    color: #FF00FF;
-    /* Magenta for operators */
+    color: #FFFF00;
 }
 
 pre,
 code {
-    /* Remove default margins */
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
