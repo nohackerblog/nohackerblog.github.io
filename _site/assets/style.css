@@ -154,7 +154,7 @@ td {
 /* Code Block Styling */
 pre,
 code {
-    background-color: #002200;
+    background-color: #111111;
     color: #00FF00;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -202,18 +202,16 @@ code .o {
 
 /* Inline Code */
 code {
-    background-color: #001100;
     border-radius: 3px;
-    font-size: 90%;
 }
 
 /* Block Code */
 pre {
-    background-color: #001100;
     padding: 10px;
+    padding-left: 20px;
     border-radius: 5px;
     overflow-x: auto;
-    max-width: 70%;
+    max-width: auto;
 }
 
 @media only screen and (max-width: 700px) {
