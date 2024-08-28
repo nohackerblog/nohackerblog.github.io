@@ -1,6 +1,5 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css?family=Roboto Mono');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root {
     --line-height: 1.20rem;
@@ -51,7 +50,7 @@ body {
     width: 100%;
     margin: 0;
     padding: var(--line-height) 2ch;
-    max-width: calc(min(85ch, round(down, 100%, 1ch)));
+    max-width: calc(min(87ch, round(down, 100%, 1ch)));
     line-height: var(--line-height);
     font-family: var(--font-family);
 }
@@ -173,25 +172,101 @@ footer p {
     margin: 0;
 }
 
-/* Code Block Styling */
-pre,
-code {
-    font-family: var(--code-font-family);
-    background-color: var(--code-background-color);
-}
-
-/* Inline Code */
-code {
-    border-radius: 3px;
-}
-
-/* Block Code */
-pre {
+/* Code block */
+pre code {
     tab-size: 4;
-    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: c9c9c9;
+    display: block;
+    padding: 1em;
+    margin: 0.5em 0;
     overflow-x: auto;
-    max-width: auto;
-    line-height: 1.3rem;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Inline code */
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    color: #c9c9c9;
+    font-weight: 600;
+}
+
+/* Comments */
+code .co {
+    color: #afafff;
+}
+
+/* Keyword */
+code .dt {
+    color: #ffafff;
+}
+
+/* Constant */
+code .dv {
+    color: #ffff5f;
+}
+
+/* String */
+code .st {
+    color: #ffff5f;
+}
+
+/* Function */
+code .cf {
+    color: #87ffff;
+}
+
+/* Built-in and Types */
+code .bu,
+code .ty {
+    color: #ff5faf;
+}
+
+/* Class names */
+code .cl {
+    color: #a52a2a;
+}
+
+/* Tags */
+code .ta {
+    color: #ff4500;
+}
+
+/* Attributes */
+code .at {
+    color: #ff6347;
+}
+
+/* Numbers */
+code .nu {
+    color: #ffff5f;
+}
+
+/* Operators and punctuation */
+code .op,
+code .p {
+    color: #c9d1d9;
+}
+
+/* Property names */
+code .pr {
+    color: #d29922;
+}
+
+/* Variables */
+code .va {
+    color: #e06c75;
+}
+
+/* Emphasis */
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 800;
 }
