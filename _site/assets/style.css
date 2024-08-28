@@ -200,14 +200,6 @@ code .o {
     color: #FFFF00;
 }
 
-pre,
-code {
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 1.5;
-}
-
 /* Inline Code */
 code {
     background-color: #001100;
@@ -227,15 +219,14 @@ pre {
 @media only screen and (max-width: 700px) {
     pre {
         max-width: 100%;
-        line-height: 1.7;
-        font-size: 0.8rem;
+        line-height: 1.3;
     }
 
     .container {
-        width: 90%;
+        width: 88%;
     }
 
     body {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
 }
