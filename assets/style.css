@@ -9,8 +9,9 @@
     --text-color: #fff;
     --link-color: #00aaff;
     --code-background-color: #111111;
+    --border-thickness: 1px;
 
-    font-size: min(1rem, 2vw, 2rem);
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -31,7 +32,7 @@
 
 
 *+* {
-    margin-top: var(--line-height);
+    margin-top: calc(var(--line-height) * 0.75);
 }
 
 html {
@@ -55,61 +56,66 @@ body {
     font-family: var(--font-family);
 }
 
-@media screen and (max-width: 480px) {
-    :root {
-        font-size: 14px;
-    }
-
-    body {
-        padding: var(--line-height) 1ch;
-    }
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: calc(var(--line-height) * 1.5) 0 var(--line-height);
-    line-height: var(--line-height);
+    font-weight: var(--font-weight-bold);
+    margin: calc(var(--line-height) * 2) 0 var(--line-height);
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: calc(1.5 * var(--line-height));
-    margin-bottom: var(--line-height);
+    font-size: 1.96rem;
+    line-height: var(--line-height);
 }
 
 h2 {
-    font-size: 1.5rem;
-    line-height: calc(2 * var(--line-height));
+    font-size: 1.69rem;
+    line-height: var(--line-height);
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        font-size: 16px;
+    }
+
+    body {
+        padding: calc(var(--line-height) * 0.2) 1ch;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem
+    }
+}
+
+/* Body Headers */
+body h2 {
+    border-bottom: 1px solid var(--text-color);
+}
+
+body h1 {
+    border-bottom: 3px solid var(--text-color);
 }
 
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-body h2 {
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--text-color);
-}
-
-body h1 {
-    padding-bottom: 4px;
-    border-bottom: 3px solid var(--text-color);
 }
 
 header h1 {
     border-bottom: none;
 }
 
+
 /* Navigation */
 nav {
     text-align: center;
-    margin-bottom: 30px;
 }
 
 nav ul {
@@ -186,13 +192,13 @@ footer p {
 pre code {
     tab-size: 4;
     background-color: #1e1e1e;
-    color: c9c9c9;
+    color: #c9c9c9;
     display: block;
     padding: 1em;
     margin: 0.5em 0;
     overflow-x: auto;
     border-radius: 6px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Inline code */
@@ -202,7 +208,7 @@ code {
     border-radius: 6px;
     background-color: #1e1e1e;
     color: #c9c9c9;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Comments */
@@ -213,27 +219,32 @@ code .co {
 /* Keyword */
 code .dt {
     color: #ffafff;
+    font-weight: 600;
 }
 
 /* Constant */
 code .dv {
     color: #ffff5f;
+    font-weight: 600;
 }
 
 /* String */
 code .st {
     color: #ffff5f;
+    font-weight: 600;
 }
 
 /* Function */
 code .cf {
     color: #87ffff;
+    font-weight: 600;
 }
 
 /* Built-in and Types */
 code .bu,
 code .ty {
     color: #ff5faf;
+    font-weight: 600;
 }
 
 /* Class names */
@@ -279,4 +290,26 @@ em {
 
 strong {
     font-weight: 800;
+}
+
+table {
+    position: relative;
+    top: calc(var(--line-height) / 2);
+    width: calc(round(down, 100%, 1ch));
+    border-collapse: collapse;
+    margin: 0 0 calc(var(--line-height) * 2);
+}
+
+th,
+td {
+    border: var(--border-thickness) solid var(--text-color);
+    padding:
+        calc((var(--line-height) / 2)) calc(1ch - var(--border-thickness) / 2) calc((var(--line-height) / 2) - (var(--border-thickness)));
+    line-height: var(--line-height);
+    vertical-align: top;
+    text-align: left;
+}
+
+table tbody tr:first-child>* {
+    padding-top: calc((var(--line-height) / 2) - var(--border-thickness));
 }
