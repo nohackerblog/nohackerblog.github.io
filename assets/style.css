@@ -1,16 +1,16 @@
 /* General Styles */
-@import url('https://fonts.googleapis.com/css?family=Source Code Pro');
+@import url('https://fonts.googleapis.com/css?family=Fira Mono');
 
 :root {
-    --line-height: 1.20rem;
+    --line-height: 1.50em;
     --background-color: #000;
-    --font-family: 'Source Code Pro', sans-serif;
-    --code-font-family: 'Source Code Pro', monospace;
+    --font-family: 'Fira Mono', sans-serif;
+    --code-font-family: 'Fira Mono', monospace;
     --text-color: #fff;
     --link-color: #00aaff;
     --code-background-color: #111111;
 
-    font-size: 16px;
+    font-size: min(1rem, 2vw, 2rem);
     font-weight: normal;
 }
 
@@ -49,7 +49,7 @@ body {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: var(--line-height) 2ch;
+    padding: calc(var(--line-height) * 0.8) 2ch;
     max-width: calc(min(87ch, round(down, 100%, 1ch)));
     line-height: var(--line-height);
     font-family: var(--font-family);
@@ -71,13 +71,13 @@ h3,
 h4,
 h5,
 h6 {
-    margin: calc(var(--line-height) * 2) 0 var(--line-height);
+    margin: calc(var(--line-height) * 1.5) 0 var(--line-height);
     line-height: var(--line-height);
 }
 
 h1 {
     font-size: 2rem;
-    line-height: calc(2 * var(--line-height));
+    line-height: calc(1.5 * var(--line-height));
     margin-bottom: var(--line-height);
 }
 
@@ -89,7 +89,7 @@ h2 {
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 body h2 {
