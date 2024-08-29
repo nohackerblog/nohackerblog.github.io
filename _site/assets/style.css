@@ -83,6 +83,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    line-height: calc(2 * var(--line-height));
 }
 
 /* Header */
@@ -93,7 +94,16 @@ header {
 
 body h2 {
     padding-bottom: 4px;
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+body h1 {
+    padding-bottom: 4px;
+    border-bottom: 3px solid var(--text-color);
+}
+
+header h1 {
+    border-bottom: none;
 }
 
 /* Navigation */
