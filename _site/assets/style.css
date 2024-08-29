@@ -63,7 +63,7 @@ h4,
 h5,
 h6 {
     font-weight: var(--font-weight-bold);
-    margin: calc(var(--line-height) * 2) 0 var(--line-height);
+    margin: calc(var(--line-height) * 1.2) 0 var(--line-height);
 }
 
 h1 {
@@ -78,7 +78,7 @@ h2 {
 
 @media screen and (max-width: 480px) {
     :root {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     body {
@@ -169,7 +169,7 @@ a:hover {
 
 .posts-list li span {
     color: #888888;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
 /* Footer */
@@ -314,3 +314,6 @@ td {
 table tbody tr:first-child>* {
     padding-top: calc((var(--line-height) / 2) - var(--border-thickness));
 }
+
+p,
+li {}
