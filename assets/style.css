@@ -1,12 +1,12 @@
 /* General Styles */
-@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
+@import url('https://fonts.googleapis.com/css?family=Source Code Pro');
 
 :root {
     --line-height: 1.20rem;
-    --background-color: #000000;
-    --font-family: 'Roboto Mono', sans-serif;
-    --code-font-family: 'Roboto Mono', monospace;
-    --text-color: #ffffff;
+    --background-color: #000;
+    --font-family: 'Source Code Pro', sans-serif;
+    --code-font-family: 'Source Code Pro', monospace;
+    --text-color: #fff;
     --link-color: #00aaff;
     --code-background-color: #111111;
 

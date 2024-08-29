@@ -1,12 +1,12 @@
 /* General Styles */
-@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
+@import url('https://fonts.googleapis.com/css?family=IBM Plex Mono');
 
 :root {
     --line-height: 1.20rem;
-    --background-color: #000000;
-    --font-family: 'Roboto Mono', sans-serif;
-    --code-font-family: 'Roboto Mono', monospace;
-    --text-color: #ffffff;
+    --background-color: #000;
+    --font-family: 'IBM Plex Mono', sans-serif;
+    --code-font-family: 'IBM Plex Mono', monospace;
+    --text-color: #fff;
     --link-color: #00aaff;
     --code-background-color: #111111;
 
@@ -14,7 +14,15 @@
     font-weight: normal;
 }
 
-/*
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #fff;
+        --background-color: #000;
+        --link-color: #00aaff;
+        --code-background-color: #111111
+    }
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --text-color: #000;
@@ -23,7 +31,6 @@
         --code-background-color: #eeeeee
     }
 }
-*/
 
 * {
     box-sizing: border-box;
