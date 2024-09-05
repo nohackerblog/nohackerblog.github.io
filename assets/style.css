@@ -22,7 +22,6 @@
     font-weight: normal;
 }
 
-/*
 @media (prefers-color-scheme: light) {
     :root {
         --text-color: #000;
@@ -31,7 +30,6 @@
         --code-background-color: #eeeeee
     }
 }
-*/
 
 * {
     box-sizing: border-box;
@@ -39,7 +37,7 @@
 
 
 *+* {
-    margin-top: calc(var(--line-height) * 0.75);
+    margin-top: calc(var(--line-height) * 0.1);
 }
 
 html {
@@ -70,7 +68,7 @@ h4,
 h5,
 h6 {
     font-weight: var(--font-weight-bold);
-    margin: calc(var(--line-height) * 1.2) 0 var(--line-height);
+    margin: calc(var(--line-height) * 1) 0 var(--line-height);
 }
 
 h1 {
@@ -118,6 +116,7 @@ header {
 header h1 {
     border-bottom: none;
     margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 
